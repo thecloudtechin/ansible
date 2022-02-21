@@ -1,0 +1,13 @@
+---
+- name: Deploy Vsftpd
+  hosts: web
+  #become: true
+  tasks:
+    - name: Install vsftpd
+        package:
+      #ansible.builtin.user:
+        name: vsftpd
+        state: "present"
+      name: enable vsftpd
+      service: nmae=vsftpd enabled=true
+        

@@ -1,0 +1,14 @@
+---
+- name: Deploy  NGINX
+  hosts: all
+  tasks:
+   - name: install  nginx
+     package:
+       name: nginx
+       state: latest
+   - name: enable nginx
+     service: name=nginx state=restarted
+
+
+
+        
