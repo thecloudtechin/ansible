@@ -8,6 +8,7 @@
        state: latest
    - name: enable nginx
      service: name=nginx state=restarted
+---
 
 
 
