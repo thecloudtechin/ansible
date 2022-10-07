@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: myapp
+  name: dgweb
 spec:
   selector:
     matchLabels:
-      app: myapp
+      app: dgweb
   replicas: 2
   
   template:
     metadata:
       labels:
-        app: myapp
+        app: dgweb
     spec:
       containers:
-      - name: myapp
+      - name: dgweb
         image: <Image>
         resources:
           limits:
@@ -27,10 +27,10 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: myapp
+  name: dgweb
 spec:
   selector:
-    app: myapp
+    app: dgweb
   ports:
   - port: <Port>
     targetPort: <Target Port>
@@ -46,7 +46,7 @@ data:
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: myapp
+  name: dgweb
 data:
   key: value
 

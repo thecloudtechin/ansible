@@ -3,7 +3,7 @@ kind: ConfigMap
 metadata:
   name: myconfigmap
   labels:
-    app: myapplication
+    app: dgweblication
 data:
   my-key: my-value
 apiVersion: v1
@@ -11,7 +11,7 @@ kind: ConfigMap
 metadata:
   name: myconfigmap
   labels:
-    app: myapplication
+    app: dgweblication
 data:
   my-key: my-value
  
