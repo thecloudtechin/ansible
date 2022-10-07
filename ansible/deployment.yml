@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -20,3 +21,5 @@ spec:
             cpu: "500m"
         ports:
         - containerPort: <Port>
+=======
+>>>>>>> Stashed changes

@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 apiVersion: v1
 kind: ConfigMap
 metadata:
@@ -15,3 +16,5 @@ metadata:
 data:
   my-key: my-value
  
+=======
+>>>>>>> Stashed changes
